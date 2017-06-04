@@ -30,6 +30,7 @@ After the parsing :
     </div>
 
 **The variables must not possess these signs** : Not a parenthesis, not an equal sign (=) and not a quote or change `data-make="(Name of the_vars=My best var)"` to `data-make='(Name of the_vars=My best var)'` for example.
+
 **Les variables ne doivent pas posséder ces signes** : pas de paranthèse, pas de signe égale(=) et pas de " ous sinon, il faut changer `data-make="(Name of the_vars=My best var)"` par `data-make='(Name of the_vars=My best var)'`
 
 #### This second example show how to make a loop :
@@ -51,3 +52,13 @@ After this parsing :
     </tr>
 
 *Note :* class and data-make has copied. You can easily modify this behavior.
+
+## Give comment
+
+You can give a comment in [openclassrooms](https://openclassrooms.com/forum/sujet/regular-js-minifie-votre-code-html/91770237) or in [primfx.com](https://www.primfx.com/forum/discussions/projet-recrutement/regular-minifier-votre-code-html-1054/page-1)
+
+## LICENSE
+
+This framework is distributed under MIT license.
+
+© Coucougael94 2017
