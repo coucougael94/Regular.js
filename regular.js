@@ -3,20 +3,21 @@ String.prototype.replaceAll = function(search, replacement) {var target = this;r
 
 var //ht 			= $('.regular').prop('outerHTML'),
 	classList	= document.getElementsByClassName('regular'),
-	indexEnd 	= 0;
-for(var i=0;i < classList.length;i++){
+	indexEnd 	= 0,
+	classList_length = classList.length;
+
+for(var i=0;i < classList_length;i++){
 
 	var ht = classList[i].outerHTML,
 		argsLists	= classList[i].getAttribute('data-make'),
 		inside_ = [],
 		arg="";
-		console.log(ht);
 
 	for(var j = 1;j<argsLists.split('(').length;j++){
 		inside_[j]=ht;
 		arg = argsLists.split('(')[j];
 
-		var propList = arg.substring(1, arg.length-1).split(';');
+		var propList = arg.substring(0, arg.length-1).split(';');
 
 		propList.forEach(function(element) {
 			inside_[j] = inside_[j].replaceAll('{%'+element.split('=')[0]+'%}', element.split('=')[1]);
