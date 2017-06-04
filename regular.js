@@ -1,11 +1,16 @@
+
 String.prototype.replaceAll = function(search, replacement) {var target = this;return target.replace(new RegExp(search, 'g'), replacement);};
 
-var ht = $('.regular').prop('outerHTML'), indexEnd = 0;
-for(var i=0;i<document.getElementsByClassName('regular').length;i++){
+var //ht 			= $('.regular').prop('outerHTML'),
+	classList	= document.getElementsByClassName('regular'),
+	indexEnd 	= 0;
+for(var i=0;i < classList.length;i++){
 
-	var argsLists	= $('.regular').attr('data-make'),
+	var ht = classList[i].outerHTML,
+		argsLists	= classList[i].getAttribute('data-make'),
 		inside_ = [],
 		arg="";
+		console.log(ht);
 
 	for(var j = 1;j<argsLists.split('(').length;j++){
 		inside_[j]=ht;
@@ -22,6 +27,6 @@ for(var i=0;i<document.getElementsByClassName('regular').length;i++){
 		//ht = ht.replaceAll('class="regular" ', '');
 
 	//Pareil mais pour l'attribut data-make
-		//ht = ht.replaceAll($(this).attr('data-make'), '');
+		//ht = ht.replaceAll(classList[i].getAttribute('data-make'), '');
+	classList[i].outerHTML = ht;
 }
-$('.regular').prop('outerHTML', ht);
