@@ -1,8 +1,7 @@
 
 String.prototype.replaceAll = function(search, replacement) {var target = this;return target.replace(new RegExp(search, 'g'), replacement);};
 
-var //ht 			= $('.regular').prop('outerHTML'),
-	classList	= document.getElementsByClassName('regular'),
+var classList	= $('.regular'),//The alone method that use JQuery
 	indexEnd 	= 0,
 	classList_length = classList.length;
 
