@@ -7,13 +7,13 @@ In short, with this framework, portions of your code will split in two: View (HT
 
 ### FRANCAIS
 
-Ce framework vous aide a minifié votre code html. Avec, vous pourrai séparer votre code html de ces données. Dans l'exemple d'un tableau, les parties qui ne changent jamais entre chaque ligne, sont les tr et les td, ils sont pour chaque ligne toujours présent.
+Ce framework vous aide à minifier votre code html. Avec, vous pourrait séparer votre code html de ses données. Dans l'exemple d'un tableau, les parties qui ne changent jamais entre chaque ligne, sont les tr et les td, ils sont pour chaque ligne toujours présent.
 Bref, avec ce framework, des portions de votre code se sépareront en deux : La vue (le HTML) et les données (du html, du texte, des titres... etc).
 
 ## EXAMPLE / EXEMPLE
 
 ### THE / LES VARIABLES
-#### This first example show how to make and display one variable (Name of the vars in this example : Name of the_vars)
+#### This first example show how to make and display one variable (Name of vars in this example : The title & The second_title)
 
     <div class="regular" data-make="(The title=My best var;The second_title=My second title)">
       <h1>{%The title%}</h1>
